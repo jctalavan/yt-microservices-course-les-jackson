@@ -1,0 +1,13 @@
+@PlatformService_HostAddress = http://localhost:5037
+
+POST {{PlatformService_HostAddress}}/api/platforms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "Name": "Docker",
+    "Publisher": "Docker",
+    "Cost": "Free"
+}
+
+###
