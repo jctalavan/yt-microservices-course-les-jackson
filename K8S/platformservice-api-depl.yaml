@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platformservice-api-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: platformservice-api
+  template:
+    metadata:
+      labels:
+        app: platformservice-api
+    spec:
+      containers:
+        - name: platformservice-api
+          image: jctalavan/platformservice-api:latest
